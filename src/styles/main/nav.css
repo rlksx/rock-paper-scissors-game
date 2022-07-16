@@ -1,5 +1,6 @@
 @import url(../variables.css);
-nav {
+
+#container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,11 +9,10 @@ nav {
   
   background-color: var(--primary-color);
   color: var(--brand-light);
+
+  font-size: 1.8rem;
 }
 
-nav div {
-  font-size: 1.8rem;
-  
-  padding-block: 5px;
-  padding-inline: 20px;
+#container section {
+  padding: 5px;
 }
