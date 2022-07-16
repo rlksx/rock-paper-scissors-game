@@ -1,0 +1,40 @@
+@import url(../variables.css);
+
+#hands {
+  height: 50vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+#rock img,
+#paper img,
+#scissors img {
+  max-width: 180px;
+  padding: 20px;
+}
+
+#rock,
+#paper,
+#scissors {
+  border: 3px solid var(--brand-light);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/*======================== AJUSTE DA IMAGEM ========================*/
+#scissors img {
+  transform: rotate(45deg);
+}
+
+/*============================== HOVER =============================*/
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+  background-color: var(--brand-light);
+  transition: 400ms;
+}

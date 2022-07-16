@@ -1,0 +1,14 @@
+@import url(../variables.css);
+
+header {
+  background-color: var(--brand-light);
+  width: 100vw;
+  height: 18vh;
+
+  display: flex;
+  align-items: center; /* alinhamento vertical */
+  justify-content: center; /* alinha horizontal */
+
+  font-size: 1.6rem;
+  color: var(--primary-color);
+}
