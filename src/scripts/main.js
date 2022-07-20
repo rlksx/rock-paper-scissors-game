@@ -80,5 +80,5 @@ function playLosed() {
   score.innerHTML = `${userScore} : ${systemScore}`
 }
 function playDraw() {
-  title.innerHTML = 'Opa! tivemos um empate, ninguém ganhou pontos!'
+  title.innerHTML = 'Empate! ninguém ganhou pontos!'
 }
