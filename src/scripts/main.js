@@ -75,7 +75,7 @@ function playWin() {
   score.innerHTML = `${userScore} : ${systemScore}`
 }
 function playLosed() {
-  title.innerHTML = 'Você perdeu, o sistema ganhou 1 ponto!'
+  title.innerHTML = 'O sistema ganhou 1 ponto!'
   systemScore++
   score.innerHTML = `${userScore} : ${systemScore}`
 }
