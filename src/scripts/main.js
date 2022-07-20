@@ -2,8 +2,11 @@ const rock = document.getElementById('rock')
 const paper = document.getElementById('paper')
 const scissors = document.getElementById('scissors')
 
-const userScore = 0
-const SystemScore = 0
+const title = document.getElementById('title')
+const score = document.getElementById('score')
+
+let userScore = 0
+let systemScore = 0
 
 const hands = ['hr', 'hp', 'hs']
 /* hr == hand rock, hp == hand paper, hs == hand scissors */
@@ -67,11 +70,15 @@ function main() {
 }
 
 function playWin() {
-  window.alert('você ganhou parabéns')
+  title.innerHTML = 'Você ganhou 1 ponto!'
+  userScore++
+  score.innerHTML = `${userScore} : ${systemScore}`
 }
 function playLosed() {
-  window.alert('voce perdeu')
+  title.innerHTML = 'Você perdeu, o sistema ganhou 1 ponto!'
+  systemScore++
+  score.innerHTML = `${userScore} : ${systemScore}`
 }
 function playDraw() {
-  window.alert('você empatou com o sistema')
+  title.innerHTML = 'Opa! tivemos um empate, ninguém ganhou pontos!'
 }
